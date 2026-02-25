@@ -18,5 +18,7 @@
   + Licensed under Creative Commons CC BY 4.0.
 # Phần 3: Tạo và Quản lý Mã Nguồn
 - Nhiệm vụ 3.1: Tạo mã nguồn HTML hiển thị nội dung số
-  + file:///D:/NTCNS/Nhi%E1%BB%87m%20v%E1%BB%A5%203.1.html
+Nguồn: Canva AI, Unsplash, CapCut, Pexels
+
+Phát hành theo giấy phép Creative Commons CC BY 4.0
 - Nhiệm vụ 3.2: Quản lý phiên bản bằng Git/GitHub
