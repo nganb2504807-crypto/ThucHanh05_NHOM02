@@ -7,7 +7,7 @@
 # Phần 2: Tạo và Chỉnh sửa Nội dung Đa phương tiện
 - Mục tiêu: Tạo nội dung đa phương tiện (infographic hoặc video ngắn) bằng Canva/CapCut, sử dụng AI đạo đức (CLO9, CLO12).
 - Nhiệm vụ 2.1: Tạo infographic bằng Canva AI
-  = https://creativecommons.org/licenses/by/4.0/
+  + https://creativecommons.org/licenses/by/4.0/
 - Nhiệm vụ 2.2: Tạo video ngắn bằng CapCut
 # Phần 3: Tạo và Quản lý Mã Nguồn
 - Nhiệm vụ 3.1: Tạo mã nguồn HTML hiển thị nội dung số
