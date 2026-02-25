@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Education Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #003366;
+            --secondary: #00d2ff;
+            --gradient: linear-gradient(135deg, #003366 0%, #0077be 100%);
+            --white: #ffffff;
+            --glass: rgba(255, 255, 255, 0.9);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f4f7f9;
+            color: #2d3436;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Hiệu ứng chuyển cảnh khi vào trang */
+        .page-wrapper {
+            animation: fadeInPage 1.2s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeInPage {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header {
+            background: var(--gradient);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            margin-bottom: -50px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+
+        header p {
+            font-weight: 300;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .main-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        /* Thẻ Card với hiệu ứng Glassmorphism nhẹ */
+        .glass-card {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 25px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            border: 1px solid rgba(255,255,255,0.3);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+        }
+
+        .glass-card h2 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .glass-card h2::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: var(--secondary);
+            border-radius: 2px;
+        }
+
+        img, video {
+            width: 100%;
+            border-radius: 16px;
+            display: block;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        /* Badge thông số nổi bật */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .stat-box {
+            background: #f8fbff;
+            padding: 15px;
+            border-radius: 12px;
+            border-left: 4px solid var(--secondary);
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* Nút kêu gọi hành động (CTA) */
+        .cta-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: var(--gradient);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 10px 20px rgba(0, 51, 102, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(0, 51, 102, 0.3);
+        }
+
+        @media (max-width: 850px) {
+            .main-content { grid-template-columns: 1fr; }
+            header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-wrapper">
+    <header>
+        <h1>Công Nghệ Số 4.0</h1>
+        <p>Kiến tạo tương lai qua từng bài giảng số</p>
+    </header>
+
+    <main class="main-content">
+        <section class="glass-card">
+            <h2>Dữ Liệu Trực Quan</h2>
+            <img src="file:///C:/Users/student/Desktop/infographic.jpg" alt="Thống kê học tập">
+            <div class="stats-grid">
+                <div class="stat-box">🎯 85% Tương tác</div>
+                <div class="stat-box">⏱️ 60% Tiết kiệm</div>
+            </div>
+        </section>
+
+        <section class="glass-card">
+            <h2>Hành Trình Trải Nghiệm</h2>
+            <video controls>
+                <source src="5720256322759896249.mp4" type="video/mp4">
+            </video>
+            <p style="margin-top: 15px; color: #666; font-size: 0.9rem;">
+                Chứng kiến sự thay đổi vượt bậc của học sinh khi có sự hỗ trợ từ AI và các công cụ học tập linh hoạt.
+            </p>
+            <div class="stats-grid">
+                <div class="stat-box">🌍 Học mọi lúc</div>
+                <div class="stat-box">💻 Kỹ năng số</div>
+            </div>
+            <a href="#" class="cta-button">Tìm hiểu thêm</a>
+        </section>
+    </main>
+</div>
+<footer style="
+        margin-top: 60px;
+        padding: 40px 20px;
+        background: #ffffff;
+        border-top: 1px solid #eee;
+        text-align: center;
+        border-radius: 40px 40px 0 0;
+        box-shadow: 0 -10px 30px rgba(0,0,0,0.02);
+    ">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <p style="font-weight: 700; color: var(--primary); margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">
+                Nguồn Tư Liệu
+            </p>
+            
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; color: #666; font-size: 0.85rem;">
+                <span style="display: flex; align-items: center; gap: 5px;">
+                    📄 <strong>Infographic:</strong> Canva AI & Unsplash (CC0)
+                </span>
+                <span style="display: flex; align-items: center; gap: 5px;">
+                    🎬 <strong>Video:</strong> CapCut, Pexels & FreeSound (CC0)
+                </span>
+                <span style="display: flex; align-items: center; gap: 5px;">
+                    ⚖️ <strong>Giấy phép:</strong> Creative Commons CC BY 4.0
+                </span>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 25px auto; width: 50px;">
+            
+            <p style="color: #999; font-size: 0.8rem;">
+                &copy; 2024 Bản quyền thuộc về dự án Giáo dục số. Thiết kế bởi Gemini.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
