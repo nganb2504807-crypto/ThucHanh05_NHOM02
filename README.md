@@ -21,3 +21,4 @@
  + Nguồn: Canva AI, Unsplash, CapCut, Pexels
  + Phát hành theo giấy phép Creative Commons CC BY 4.0
 - Nhiệm vụ 3.2: Quản lý phiên bản bằng Git/GitHub
+  + https://github.com/nganb2504808-afk/ThucHanh05_L-Kim-Ng-n..git
