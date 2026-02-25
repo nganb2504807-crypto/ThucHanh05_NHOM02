@@ -3,7 +3,7 @@
 - ĐÀO THỊ KIM NGÂN   B2504807
 - LÊ KIM NGÂN B2504808
 - HOÀNG NGỌC CHĂM B2504827
-- TRẦN NGUYỄN ANH THƯ B2504817
+- TRẦN NGUYỄN ANH THƯ B2504818
 # Phần 1: Tạo và Chỉnh sửa Nội dung Văn bản Số 
 - Mục tiêu: Tạo và chỉnh sửa nội dung văn bản số bằng Microsoft Word/Google Docs, áp dụng bản quyền (CLO9).
 - Nhiệm vụ 1.1: Tạo tài liệu báo cáo bằng Google Docs
